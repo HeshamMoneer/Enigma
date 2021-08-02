@@ -44,6 +44,11 @@ public class Intro extends Shell {
 		lblChooseYourEnigma.setBounds(156, 72, 139, 30);
 		lblChooseYourEnigma.setText("Choose edition");
 		
+		Label cr = new Label(this, SWT.NONE);
+		cr.setFont(SWTResourceManager.getFont("Segoe UI", 12, SWT.NORMAL));
+		cr.setBounds(20, 230, 200, 30);
+		cr.setText("Created by: Hesham Moneer");
+		
 		Button btnEngima = new Button(this, SWT.NONE);
 		btnEngima.addSelectionListener(new SelectionAdapter() {
 			@Override

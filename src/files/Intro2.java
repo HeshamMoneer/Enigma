@@ -2,6 +2,7 @@ package files;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.wb.swt.SWTResourceManager;
 import org.eclipse.swt.widgets.Button;
@@ -37,6 +38,11 @@ public class Intro2 extends Shell {
 	public Intro2(Display display) {
 		super(display, SWT.SHELL_TRIM);
 		setImage(SWTResourceManager.getImage(Intro1.class, "/images/ENG.png"));
+		
+		Label cr = new Label(this, SWT.NONE);
+		cr.setFont(SWTResourceManager.getFont("Segoe UI", 12, SWT.NORMAL));
+		cr.setBounds(20, 230, 200, 30);
+		cr.setText("Created by: Hesham Moneer");
 		
 		Button btnTextFlow = new Button(this, SWT.NONE);
 		btnTextFlow.addSelectionListener(new SelectionAdapter() {
