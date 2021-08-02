@@ -1,5 +1,6 @@
 package files;
 import java.io.File;
+import java.net.URL;
 import java.util.Random;
 
 import javax.sound.sampled.AudioInputStream;
@@ -82,7 +83,7 @@ public class GUI_1 extends Shell {
 	static char[] UKW = new char[0];
 	void getInf() {
 		try {
-			String soundName = "./src/images/snd.wav";    
+			String soundName = "./src/images/snd.wav"; 
 			AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File(soundName));
 			Clip clip = AudioSystem.getClip();
 			clip.open(audioInputStream);
