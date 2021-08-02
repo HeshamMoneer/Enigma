@@ -314,7 +314,7 @@ public static char enigma4(char c, char[] UKW, char[] rotor1, int p1, int r1, ch
 		GUI2_1.label_10.setBounds(410, 380, 683, 8);
 		return c;
 }
-public static void main(String[] args) {
-	System.out.print(pB("BAXY"));
-}
+//public static void main(String[] args) {
+//	System.out.print(pB("BAXY"));
+//}
 }
